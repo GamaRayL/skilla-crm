@@ -1,0 +1,44 @@
+:root {
+  --c-dark: #122945;
+
+  --c-white: #FFFFFF;
+
+  --c-white-cs: #F1F4F9;
+
+  --c-lync: #5E7793;
+
+  --c-yellow: #FFD500;
+
+  --c-remy: #FEE9EF;
+
+  --c-red: #EA1A4F;
+
+  --c-green: #28A879;
+  --c-green-light: #DBF8EF;
+
+  --c-blue: #005FF8;
+  --c-blue-light: #D8E4FB;
+  --c-blue-dark: #091336;
+  --c-blue-hover: #0024CB;
+  --c-blue-active: #274BC8;
+
+  --c-gray: #899CB1;
+  --c-gray-light: #ADBFDF;
+
+  --c-error: var(--c-red);
+  --c-success: var(--c-green);
+
+  --border-radius: 4px;
+  --border-radius20: 20px;
+
+  --base-font-family: "SF-Pro-Display", sans-serif;
+  --base-line-height: 1.4;
+  --base-font-size: 15px;
+
+  --base-transition-duration: 0.2s;
+
+  --input-height: 48px;
+
+  --site-max-width: 1920px;
+  --site-min-width: 360px;
+}

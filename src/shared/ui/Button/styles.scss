@@ -1,0 +1,57 @@
+@import "@/app/styles/mixins.scss";
+
+.button {
+  --width: 100%;
+  --maxWidth: 200px;
+  --height: var(--input-height);
+  --padding: 11px 20px 13px 20px;
+
+  --bgColor: var(--c-blue);
+  --textColor: var(--c-white);
+  --borderRadius: var(--border-radius);
+
+  --hoverTextColor: var(--c-white);
+  --hoverBgColor: var(--c-blue-hover);
+
+  --activeTextColor: var(--c-white);
+  --activeBgColor: var(--c-blue-active);
+
+  --iconOffsetX: 0.5em;
+
+  @include flex-center(inline-flex);
+
+  position: relative;
+
+  width: var(--width);
+  max-width: var(--maxWidth);
+  height: var(--height);
+  padding: var(--padding);
+
+
+  color: var(--textColor);
+  background-color: var(--bgColor);
+  border-radius: var(--border-radius);
+
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover {
+    background-color: var(--hoverBgColor);
+    color: var(--hoverTextColor);
+  }
+
+  &:active {
+    background-color: var(--activeBgColor);
+    color: var(--activeTextColor);
+  }
+
+  &__body {
+    @include flex-center;
+    @include square;
+
+    position: relative;
+    z-index: 1;
+
+    column-gap: var(--iconOffsetX);
+  }
+}

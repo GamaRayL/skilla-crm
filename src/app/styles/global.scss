@@ -1,0 +1,99 @@
+@import "./mixins.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+  outline: 0;
+
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  min-height: 100vh;
+  height: 100% !important;
+
+  font: var(--base-font-size) / var(--base-line-height) var(--base-font-family);
+  -webkit-font-smoothing: antialiased;
+
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: var(--site-min-width);
+  min-height: inherit;
+
+  font: inherit;
+
+  color: var(--c-dark);
+  background-color: var(--c-white-cs);
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+#root,
+.app {
+  height: inherit;
+  min-height: inherit;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+svg {
+  display: block;
+  fill: currentColor;
+}
+
+template,
+#svg-sprite {
+  display: none !important;
+}
+
+a,
+button {
+  display: inline-flex;
+
+  font-family: inherit;
+  font-size: 100%;
+
+  color: var(--c-white);
+
+  &:hover {
+    color: var(--c-gray-light);
+  }
+}
+
+a {
+  text-underline-offset: 2px;
+  text-decoration-thickness: from-font;
+}
+
+svg,
+svg *,
+a,
+button,
+input,
+textarea,
+label,
+::before,
+::after,
+::placeholder {
+  @include transition;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}

@@ -1,0 +1,11 @@
+@import "@/app/styles/mixins.scss";
+
+.svg-icon {
+  --size: 24px;
+  --color: var(--c-blue-light);
+
+  @include flex-center(inline-flex);
+  @include square(var(--size));
+
+  color: var(--color);
+}

@@ -1,0 +1,14 @@
+@mixin flex-center ($display: flex) {
+  display: $display;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin transition ($prop: var(--base-transition-duration)) {
+  transition: $prop;
+}
+
+@mixin square ($size: 100%) {
+  width: $size;
+  height: $size;
+}
